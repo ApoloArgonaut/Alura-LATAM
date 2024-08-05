@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="Header">
+        <img class="logo" src="/assets/img/alura.png" alt="Logo de Alura Latam">
+    </header>
+    <main class="body">
+        <section>
+            <textarea id="textInput" class="text-area" cols="30" rows="18" placeholder="Ingrese el texto aquí"></textarea>
+            <div>
+                <h6 class="informacion">Solo minusculas y sin acento</h6>
+            </div>
+            <div class="buttons">
+                <button class="btn-encrypt" onclick='encryptText()'>Encriptar</button>
+                <button class="btn-desencrypt" onclick='decryptText()'>Desencriptar</button>
+            </div>
+        </section>
+        <div class="fixed-section">
+            <textarea id="textOutput" class="text-area-right" cols="20" rows="15" placeholder="No hay un mensaje aun" readonly></textarea>
+            <button class="btn-copy" onclick='copyToClipboard()'>Copiar</button>
+
+        </div>
+    </main>
+    <footer class="Footer"> 
+        <p>Alura Latam</p> 
+        <p>Apolo Argonaut.</p>
+    </footer>
+    <script src="scrypt.js""></script>
+</body>
+</html>
